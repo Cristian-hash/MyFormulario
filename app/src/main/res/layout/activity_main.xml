@@ -8,12 +8,59 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/titulo"
+        android:textSize="@dimen/tamaño_letra"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/titulo"
+        android:layout_below="@+id/titulo">
+
+        <EditText
+            android:id="@+id/editNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espacio_top"
+            android:hint="@string/nombre"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editApellidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espacio_top"
+            android:hint="@string/apellidos"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editEdad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espacio_top"
+            android:hint="@string/edad"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espacio_top"
+            android:hint="@string/correo"
+            android:inputType="textEmailAddress" />
+
+        <Button
+            android:id="@+id/btnAceptar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Aceptar" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

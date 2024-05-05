@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">MyFormulario</string>
+    <string name="titulo">Formulario</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="edad">Edad</string>
+    <string name="correo">Correo</string>
+    <string name="Aceptar">Aceptar</string>
 </resources>
