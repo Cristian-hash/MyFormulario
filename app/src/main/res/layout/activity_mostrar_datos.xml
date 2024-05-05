@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MostrarDatos">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo2"
+        android:textSize="@dimen/tamaño_letra"
+        android:textStyle="bold"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre"
+        android:textSize="@dimen/tamaño_letra_for"
+        android:layout_marginTop="@dimen/espacio_top"
+        />
+
+    <TextView
+        android:id="@+id/tvApellidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/apellidos"
+        android:textSize="@dimen/tamaño_letra_for"
+        android:layout_marginTop="@dimen/espacio_top"
+        />
+
+    <TextView
+        android:id="@+id/tvEdad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/edad"
+        android:textSize="@dimen/tamaño_letra_for"
+        android:layout_marginTop="@dimen/espacio_top"
+        />
+
+
+    <TextView
+        android:id="@+id/tvCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/correo"
+        android:textSize="@dimen/tamaño_letra_for"
+        android:layout_marginTop="@dimen/espacio_top"
+        />
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnOk"
+        android:layout_marginTop="@dimen/espacio_top"/>
+
+</LinearLayout>
