@@ -1,5 +1,4 @@
 package com.example.myformulario;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,11 +10,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-
 public class MostrarDatos extends AppCompatActivity {
     TextView tvnombre,tvapellidos,tvedad,tvcorreo;
     Button btnOk;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,14 +41,12 @@ public class MostrarDatos extends AppCompatActivity {
             return insets;
         });
     }
-
     private void mostrarDato() {
         Bundle datos = this.getIntent().getExtras();
         String nombre = datos.getString("name");
         String apellidos = datos.getString("ape");
         String edad = datos.getString("age");
         String correo = datos.getString("email");
-
         tvnombre.setText(nombre);
         tvapellidos.setText(apellidos);
         tvedad.setText(edad);
