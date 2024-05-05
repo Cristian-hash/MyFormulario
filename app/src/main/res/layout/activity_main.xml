@@ -14,7 +14,8 @@
         android:text="@string/titulo"
         android:textSize="@dimen/tamaño_letra"
         android:textStyle="bold"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        tools:ignore="MissingConstraints" />
 
     <LinearLayout
         android:layout_width="match_parent"
